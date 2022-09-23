@@ -14,6 +14,10 @@
  *= require_self
  */
  @import "font-awesome";
+ body{
+    background-color: aqua;
+    word-break: break-all;
+ }
 
 
  html {
