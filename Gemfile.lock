@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: a7746b9576f9f035202defbf74ed437f86269121
+  branch: master
+  specs:
+    faker (2.23.0)
+      i18n (>= 1.8.11, < 2)
+
+GIT
   remote: https://github.com/omniauth/omniauth-github.git
   revision: fa3e9cfb3c78c7cb26e641621d81b08627600cc2
   branch: master
@@ -288,6 +296,7 @@ DEPENDENCIES
   capybara
   debug
   devise
+  faker!
   font-awesome-sass (~> 6.2.0)
   importmap-rails
   jbuilder
