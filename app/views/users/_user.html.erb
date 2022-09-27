@@ -13,5 +13,17 @@
 <%= user.current_sign_in_ip%><br>
 <%= 'last_sign_in_ip'.humanize%>:
 <%= user.last_sign_in_ip%><br>
-<%= 'last_sign_in_ip'.humanize%>:
-<%# <%= user.confirmed?%><br> %>
+<%= 'user confirmed'.humanize%>:
+<%= boolean_label(user.confirmed?)%><br>
+<%= 'Created at'.humanize%>:
+<%= user.created_at.strftime('%d/%b/%Y')%><br>
+<%= 'invitation accepted at '.humanize%>:
+<%= boolean_label(user.invitation_accepted_at?) %><br>
+
+<%= 'Created by invite'.humanize%>
+<%= boolean_label(user.created_by_invite?)%><br>
+
+
+
+
+

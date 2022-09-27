@@ -2,6 +2,7 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
+gem 'ransack'
 gem 'devise'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
@@ -11,7 +12,7 @@ gem "rails", "~> 7.0.4"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
-
+ gem 'pagy', '~> 5.10' # omit patch digit
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
@@ -41,7 +42,7 @@ gem "jbuilder"
 
 gem "font-awesome-sass", "~> 6.2.0"
 
-
+gem 'devise_invitable', '~> 2.0.0'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 

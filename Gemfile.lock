@@ -111,6 +111,9 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise_invitable (2.0.6)
+      actionmailer (>= 5.0)
+      devise (>= 4.6)
     digest (3.1.0)
     erubi (1.11.0)
     faraday (2.5.2)
@@ -184,6 +187,8 @@ GEM
       oauth2 (>= 1.4, < 3)
       omniauth (~> 2.0)
     orm_adapter (0.5.0)
+    pagy (5.10.1)
+      activesupport
     pg (1.4.3)
     public_suffix (5.0.0)
     puma (5.6.5)
@@ -221,6 +226,10 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    ransack (3.2.1)
+      activerecord (>= 6.1.5)
+      activesupport (>= 6.1.5)
+      i18n
     regexp_parser (2.5.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -296,15 +305,18 @@ DEPENDENCIES
   capybara
   debug
   devise
+  devise_invitable (~> 2.0.0)
   faker!
   font-awesome-sass (~> 6.2.0)
   importmap-rails
   jbuilder
   omniauth-github!
   omniauth-google-oauth2
+  pagy (~> 5.10)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)
+  ransack
   sass-rails (~> 6.0)
   scss (~> 1.0)
   selenium-webdriver
